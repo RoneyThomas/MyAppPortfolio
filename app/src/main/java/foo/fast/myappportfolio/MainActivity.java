@@ -1,0 +1,69 @@
+package foo.fast.myappportfolio;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    public void onClick(View view){
+        //System.out.println(view.getId());
+        switch (view.getId()){
+            case R.id.button1:
+                System.out.println("Button 1");
+                Toast.makeText(this, "Button 1 Selected", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.button2:
+                System.out.println("Button 2");
+                Toast.makeText(this, "Button 2 Selected", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.button3:
+                System.out.println("Button 3");
+                Toast.makeText(this, "Button 3 Selected", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.button4:
+                System.out.println("Button 4");
+                Toast.makeText(this, "Button 4 Selected", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.button5:
+                System.out.println("Button 5");
+                Toast.makeText(this, "Button 5 Selected", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.button6:
+                System.out.println("Button 6");
+                Toast.makeText(this, "Button 6 Selected", Toast.LENGTH_SHORT).show();
+                break;
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}
