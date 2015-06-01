@@ -19,27 +19,21 @@ public class MainActivity extends AppCompatActivity {
         //System.out.println(view.getId());
         switch (view.getId()) {
             case R.id.button1:
-                System.out.println("Button 1");
                 Toast.makeText(this, "This button will launch " + this.getString(R.string.course_name_1), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.button2:
-                System.out.println("Button 2");
                 Toast.makeText(this, "This button will launch " + this.getString(R.string.course_name_2), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.button3:
-                System.out.println("Button 3");
                 Toast.makeText(this, "This button will launch " + this.getString(R.string.course_name_3), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.button4:
-                System.out.println("Button 4");
                 Toast.makeText(this, "This button will launch " + this.getString(R.string.course_name_4), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.button5:
-                System.out.println("Button 5");
                 Toast.makeText(this, "This button will launch " + this.getString(R.string.course_name_5), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.button6:
-                System.out.println("Button 6");
                 Toast.makeText(this, "This button will launch " + this.getString(R.string.course_name_6), Toast.LENGTH_SHORT).show();
                 break;
         }
