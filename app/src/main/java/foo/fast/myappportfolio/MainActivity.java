@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,28 +16,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onClick(View view) {
-        //System.out.println(view.getId());
-        switch (view.getId()) {
-            case R.id.button1:
-                Toast.makeText(this, "This button will launch " + this.getString(R.string.course_name_1), Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button2:
-                Toast.makeText(this, "This button will launch " + this.getString(R.string.course_name_2), Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button3:
-                Toast.makeText(this, "This button will launch " + this.getString(R.string.course_name_3), Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button4:
-                Toast.makeText(this, "This button will launch " + this.getString(R.string.course_name_4), Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button5:
-                Toast.makeText(this, "This button will launch " + this.getString(R.string.course_name_5), Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button6:
-                Toast.makeText(this, "This button will launch " + this.getString(R.string.course_name_6), Toast.LENGTH_SHORT).show();
-                break;
-        }
+    public void displayToast(View view) {
+        Toast.makeText(this, "This button will launch " + ((Button) view).getText(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
